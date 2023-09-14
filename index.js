@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.post('/testGads', (req, res) => {
-  console.log(req)
+  console.log(req.body)
   return res.status(200).json({ status: 'success', message: 'Project Data Available'});
 });
 
